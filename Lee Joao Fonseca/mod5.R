@@ -1,0 +1,17 @@
+nrow(mydata)
+ncol(mydata)
+str(mydata)
+mean(mydata$q1, na.rm = TRUE)
+min(mydata$q1)
+max(mydata$q1)
+range(mydata$q1)
+ls(mydata)
+data <- subset(mydata, q3 == 'No')
+datafamele <- subset(data, q2 == 'Famele')
+plot(data$q1)
+plot(data$q1, type = 'l', col = 'blue')
+data$q2
+data$name
+subset(data, q2 == 'Famele')
+unique(data$q2)
+table(data$name, data$q1, data$q2 == 'Famele')

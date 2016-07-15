@@ -1,0 +1,4 @@
+q1: weight
+q2: do you like shusi?
+q3: what do yo prefer, tuna or salmon?
+

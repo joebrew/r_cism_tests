@@ -1,0 +1,8 @@
+dim(mydata)
+names(mydata)
+hist(mydata$age, col = 'red', main = "age distribution")
+mean(mydata$age)
+table (mydata$sex)
+plot(mydata$sex, col="blue",main= "sex")
+table (mydata$born)
+plot (mydata$sex, mydata$age)
