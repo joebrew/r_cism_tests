@@ -143,3 +143,6 @@ plot(moz$year, moz$pop, main='Population of Mozambique', col='dark red', pch=19,
 #######################################
 
 # I really love you Joe Breeeeeeeeeeeew
+# ------------
+# COMENTARIO FROM JOE: The feeling is mutual.
+# ------------

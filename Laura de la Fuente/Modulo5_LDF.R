@@ -1,6 +1,9 @@
 # I love youuuuuuuuu
 
 mydata <- read.delim("C:/Users/lfuente/Desktop/mydata.csv")
+# ------------
+# COMENTARIO FROM JOE: Can you send me this file?
+# ------------
 
 ######################
 # Database description
@@ -15,6 +18,11 @@ mean(mydata$q1)
 
 
 plot(mydata$name, mydata$q1, pch=19, main='Weight of the CISM people')
+
+# ------------
+# COMENTARIO FROM JOE: For weights (or any continuous numeric variable)
+# a histogram is generally a better way of showing it...
+# ------------
 
 plot(mydata$id, mydata$q1, type='l', main='Weight of the CISM people', xlab = 'Participants', ylab = 'weight', col= 'orange')
 
