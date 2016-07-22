@@ -13,21 +13,43 @@ df <- gapminder
 # 1. How many rows are in df?
 #######################################
 nrow(df)1704
+#-----------------
+# COMENTARIO DE JOE: Good, but you should be a "hashtag" (#)
+# before the number (1704) so that it doesn't get processed
+#-----------------
 #######################################
 # 2. How many columns are in df?
 #######################################
 ncol(df)6
-
+#-----------------
+# COMENTARIO DE JOE: Good, but again you should be a "hashtag" (#)
+# before the number (1704) so that it doesn't get processed
+#-----------------
 #######################################
 # 3. What are the column names of df?
 #######################################
 head(gapminder) country continent year lifeExp      pop gdpPercap
+#-----------------
+# COMENTARIO DE JOE: Good, but you should be a "hashtag" (#)
+# before the column names so that they don't get processed: For exapmle:
+head(gapminder) #country continent year lifeExp      pop gdpPercap
+#-----------------
 
+#-----------------
 #######################################
 # 4. What are the different countries in df?
 #######################################
 # (Hint: use the unique() function)
 gapminder$country
+
+
+#-----------------
+# COMENTARIO DE JOE: Good. But again, your code
+# should be with no hashtag, and your comments (and responses)
+# should have a hashtag before them.
+# To do multiple lines at once, run ctrl+alt+c
+#-----------------
+
 142 Levels: Afghanistan Albania Algeria Angola Argentina Australia ... Zimbabwe
 unique(gapminder$country)[1] Afghanistan              Albania                  Algeria                 
 [4] Angola                   Argentina                Australia               
@@ -84,6 +106,10 @@ unique(gapminder$country)[1] Afghanistan              Albania                  A
 #######################################
 # (Hint: use the subset() function
 df2007<-subset(df,year=='2007')
+#-----------------
+# COMENTARIO DE JOE: GOOD!
+#-----------------
+
   
 
 #######################################
@@ -91,25 +117,57 @@ df2007<-subset(df,year=='2007')
 #######################################
 # (Hint: use the subset() function and the df2007 object)
 sub
+#-----------------
+# COMENTARIO DE JOE: What is the above line for? 
+#-----------------
+
 subset(df2007,country=='Mozambique')
+#-----------------
+# COMENTARIO DE JOE: THE ABOVE LINE IS CORRECT 
+#-----------------
+
 19951656
+#-----------------
+# COMENTARIO DE JOE: THIS SHOULD HAVE A HASHTAG BEFORE IT.
+#-----------------
+
 #######################################
 # 7. What was the maximum life expectancy of any country in 2007?
 #######################################
 # (Hint: use the max() function and the df2007 object)
 
 max.col('lifeExp')
+#-----------------
+# COMENTARIO DE JOE: THE ABOVE LINE IS INCORRECT 
+#-----------------
+
+
 max(df2007$lifeExp) 82.603
+#-----------------
+# COMENTARIO DE JOE: THE ABOVE LINE IS CORRECT, BUT YOU
+# SHOULD HAVE A HASHTAG BEFORE THE NUMBER SO AS TO
+# "COMMENT IT OUT"
+#-----------------
+
+
 #######################################
 # 8. What was the average life expectancy of all countries in 2007?
 #######################################
 # (Hint: use the mean() function and the df2007 object)
 mean(df2007$lifeExp)
+#-----------------
+# COMENTARIO DE JOE: Correct. 
+#-----------------
+
 #######################################
 # 9. Create a histogram of the populations of all countries
 #    in 2007.
 #######################################
 hist(df2007$pop)
+#-----------------
+# COMENTARIO DE JOE: Correct
+#-----------------
+
 
 #######################################
 # 10. Create a plot of the relationship between 
@@ -117,13 +175,25 @@ hist(df2007$pop)
 #     using only data from 2007
 #######################################
 plot(x='lifeExp',y='gdpPercap')
+#-----------------
+# COMENTARIO DE JOE: The above is incorrect
+#-----------------
+
 plot(df2007$lifeExp,df2007$gdpPercap)
+#-----------------
+# COMENTARIO DE JOE: The above is correct 
+#-----------------
+
 #######################################
 # 11. Create an object called moz.
 #     This will be only those observations for
 #     which the country is Mozambique
 #######################################
 moz<- subset(df,country=='Mozambique')
+
+#-----------------
+# COMENTARIO DE JOE: Correct
+#-----------------
 
 
 #######################################
@@ -132,6 +202,11 @@ moz<- subset(df,country=='Mozambique')
 #######################################
 # (Hint: use the moz object)
 plot(moz$year,moz$lifeExp)
+
+#-----------------
+# COMENTARIO DE JOE: Correct
+#-----------------
+
 
 #######################################
 # 13. Do the same as number 12, but add
@@ -143,12 +218,20 @@ plot(moz$year,moz$lifeExp)
 plot(moz$year,moz$lifeExp,type='l')
 plot(moz$year,moz$lifeExp,type='l',main='Manhicafire',xlab='years',ylab='Life Expect')
 plot(moz$year,moz$lifeExp,type='l',main='Manhicafire',xlab='years',ylab='Life Expect',col='red')
+#-----------------
+# COMENTARIO DE JOE: The above is correct
+#-----------------
+
 
 #######################################
 # 14. Make a plot of the year and population of Mozambique
 #######################################
 
 plot(moz$year,moz$population)
+#-----------------
+# COMENTARIO DE JOE: Correct
+#-----------------
+
 
 #######################################
 # 15. When you are done with this exercise, 
